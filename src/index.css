@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+*{
+  color: white;
+}
+
+:root {
+    --background: 220 26% 14%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 280 60% 50%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 217 91% 60%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    /* Portfolio specific colors */
+    --purple-primary: 280 60% 50%;
+    --purple-dark: 280 60% 30%;
+    --blue-primary: 217 91% 60%;
+    --cyan-primary: 189 94% 43%;
+    --green-primary: 142 71% 45%;
+    --orange-primary: 38 92% 50%;
+    --red-primary: 0 85% 60%;
+
+  /* Gradients */
+    --gradient-purple: linear-gradient(135deg, hsl(280 60% 50%), hsl(217 91% 60%));
+    --gradient-blue: linear-gradient(135deg, hsl(217 91% 60%), hsl(189 94% 43%));
+    --gradient-skill: linear-gradient(90deg, hsl(217 91% 60%), hsl(280 60% 50%));
+  }
+
+  @theme{
+    --color-portfolio-blue:hsl(var(--blue-primary));
+    --color-portfolio-purple: hsl(var(--purple-primary));
+    --color-portfolio-purple-dark: hsl(var(--purple-dark));
+    --color-portfolio-cyan:hsl(var(--cyan-primary));
+    --color-portfolio-green:hsl(var(--green-primary));
+    --color-portfolio-red:hsl(var(--red-primary));
+    --color-portfolio-orange:hsl(var(--orange-primary));
+    --color-border:hsl(var(--border));
+    --color-input:hsl(var(--input));
+    --color-ring:hsl(var(--ring));
+    --color-background:hsl(var(--background));
+    --color-foreground:hsl(var(--foreground));
+    --color-primary:hsl(var(--primary));
+    --color-primary-foreground:hsl(var(--primary-foreground));
+    --color-secondary:hsl(var(--secondary));
+    --color-secondary-foreground:hsl(var(--secondary-foreground));
+    --color-destructive:hsl(var(--destructive));
+    --color-destructive-foreground:hsl(var(--destructive-foreground));
+    --color-muted:hsl(var(--muted));
+    --color-muted-foreground:hsl(var(--muted-foreground));
+    --color-accent:hsl(var(--accent));
+    --color-accent-foreground:hsl(var(--accent-foreground));
+    --color-popover:hsl(var(--popover));
+    --color-popover-foreground:hsl(var(--popover-foreground));
+    --color-card:hsl(var(--card));
+    --color-card-foreground:hsl(var(--card-foreground));
+    --color-skill:var(--gradient-skill);
+    --color-gradient-blue:var(--gradient-blue);
+    --color-gradient-purple:var(--gradient-purple);
+    --radius-lg:var(--radius);
+    --radius-md:calc(var(--radius)-2px);
+    --radius-sm:calc(var(--radius)-4px);
+    --animate-accordion-down:accordion-down 0.2s ease-out;
+    --animate-accordion-up:accordion-up 0.2s ease-out;
+    @keyframes accordion-down{
+      from: {
+        height:0
+      }
+      to: {
+        height:var(--radix-accordion-content-height);
+      }
+    }
+    @keyframes accordion-up {
+          from: {
+            height: var(--radix-accordion-content-height);
+          }
+          to: {
+            height: 0;
+          }
+    };
+  }
+
+
+/*@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+ */
