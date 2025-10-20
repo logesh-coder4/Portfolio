@@ -4,7 +4,6 @@ import { Button } from "../components/ui/button";
 import { useState } from "react";
 
 export const Navbar = () => {
-  const [theme, setTheme] = useState<"light" | "dark">("dark");
   const [isActive,setIsActive]=useState('Home')
 
   const navItems = [
