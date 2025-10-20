@@ -15,10 +15,6 @@ export const Navbar = () => {
     { name: "Contact", icon: Mail },
   ];
 
-  const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
-
   return (
     <motion.nav
       initial={{ y: -100 }}
@@ -60,20 +56,6 @@ export const Navbar = () => {
             );
           })}
         </div>
-
-        {/* Theme Toggle */}
-        <Button
-          variant="ghost"
-          size="icon"
-          onClick={toggleTheme}
-          className="rounded-full"
-        >
-          {theme === "dark" ? (
-            <Sun className="w-5 h-5" />
-          ) : (
-            <Moon className="w-5 h-5" />
-          )}
-        </Button>
       </div>
     </motion.nav>
   );

@@ -14,7 +14,7 @@ export const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "your.email@example.com",
+      value: "logeshwaranofficial040.com",
       color: "bg-portfolio-blue",
     },
     {
