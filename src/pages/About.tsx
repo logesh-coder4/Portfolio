@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { User, Clock, GraduationCap, Server, Layers } from "lucide-react";
 import { ParticlesBackground } from "../components/ParticlesBackground";
 

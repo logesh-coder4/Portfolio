@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { useState } from "react";
 import { Check, ExternalLink, Github } from "lucide-react";
 import { Button } from "../components/ui/button";

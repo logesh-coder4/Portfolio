@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import {motion} from "motion/react";
 import { Mail, MapPin, Clock, Send, Linkedin, Github, Twitter, Share2 } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
@@ -14,7 +14,7 @@ export const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "logeshwaranofficial040.com",
+      value: "logeshwaranofficial040@gmail.com",
       color: "bg-portfolio-blue",
     },
     {
@@ -35,13 +35,13 @@ export const Contact = () => {
     {
       name: "LinkedIn",
       icon: Linkedin,
-      url: "#",
+      url: "www.linkedin.com/in/mlogeshwaran",
       color: "bg-[#0077B5] hover:bg-[#006399]",
     },
     {
       name: "GitHub",
       icon: Github,
-      url: "#",
+      url: "https://github.com/logesh-coder4",
       color: "bg-[#333] hover:bg-[#24292e]",
     },
     {
